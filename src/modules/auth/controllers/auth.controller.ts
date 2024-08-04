@@ -1,8 +1,8 @@
 import { Controller, Get, Res, UseGuards } from '@nestjs/common';
-import { Routes } from 'src/utils/constants';
+import { Routes } from 'src/lib/constants';
 import { DiscordAuthGuard } from '../guards/auth.guard';
 import { AuthenticatedGuard } from '../guards/authenticated.guard';
-import { AuthUser } from 'src/utils/decorators/auth.decorator';
+import { AuthUser } from 'src/lib/decorators/auth.decorator';
 import { Users } from 'src/modules/database/schemas/Users';
 import { Response } from 'express';
 import { Config } from 'src/config';
